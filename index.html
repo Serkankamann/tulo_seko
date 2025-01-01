@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mutlu Yıllar Güzelimmm!</title>
+    <title>Mutlu Yıllar Tülin!</title>
     <style>
         body {
             margin: 0;
@@ -98,11 +98,38 @@
         .snowflake:nth-child(odd) {
             animation-duration: 12s;
         }
+
+        .gallery {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .photo {
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1s ease-in-out;
+        }
+
+        .photo:hover img {
+            transform: scale(1.2);
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Mutlu Yıllar Güzelimmm!</h1>
+        <h1>Mutlu Yıllar Tülin!</h1>
         <div class="gift-card">
             <p>Bal Sevgilimmm,</p>
             <p>2025 yılı sana mutluluk, sağlık ve bol kahkahalar getirsin. Bol benli yıllara kız! Bu sene sana farklı bir hediye yapmak istedim!</p>
@@ -114,6 +141,17 @@
                     width="300" height="80" frameborder="0" 
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
                     allowfullscreen></iframe>
+        </div>
+        <div class="gallery">
+            <div class="photo">
+                <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGozZnRlMGVzNTBzeDExYjV3b2FrYnBtMjRlMzkxeTh2NGQ0ZTI5cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/EQJgeo5t8tvaGvSwh1/giphy.gif" alt="New Year Celebration">
+            </div>
+            <div class="photo">
+                <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDNjZzFuZWczMmFyZzNvdjQ1MjJkM2VlaXhpZ2NucndxZjB6MGpqZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pMFItMrdXR4r6Uqkk3/giphy.gif" alt="New Year Party">
+            </div>
+            <div class="photo">
+                <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGl5ZGh2anNwZnB6Y3g5M2dsODNhMWdobGVwMHNkeTZyZGF5Y2l2byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/J7qdXOc0NvDz2Y7K8h/giphy.gif" alt="Festive Mood">
+            </div>
         </div>
     </div>
 
